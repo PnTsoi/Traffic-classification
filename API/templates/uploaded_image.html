@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<img src={{src}} class="img-responsive" alt="Cinque Terre" width="304" height="236">
+<table class="table">
+<thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Result</th>
+        <th scope="col">Percent_predicted_traffic</th>
+        <th scope="col">Percent_predicted_road</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>{{final[0]}}</td>
+        <td>{{final[1]}}</td>
+        <td>{{final[2]}}</td>
+</tbody>
+</table>
+{% endblock content %}
